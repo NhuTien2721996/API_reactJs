@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className="children-header">
+        <div className="children-header" data-aos="fade-up">
             <div className="bs-container">
                 <div className="bs-row">
                     <div className="bs-col">

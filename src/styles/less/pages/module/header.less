@@ -24,11 +24,12 @@
               transition: all 0.5s ease;
             }
           }
-          .nav{
-            .menu{
-              .menu-list{
-                .menu-list__item{
-                  .menu-list__link{
+
+          .nav {
+            .menu {
+              .menu-list {
+                .menu-list__item {
+                  .menu-list__link {
                     color: #fff;
                   }
                 }
@@ -45,15 +46,16 @@
       .top-content {
         .header-top__left {
           .phone-number {
-            color: #fff;
+            color: #8397b9;
           }
         }
 
         .search {
           background-color: #5f77a3;
           border: none;
-          .form-search{
-            &::placeholder{
+
+          .form-search {
+            &::placeholder {
               color: #fff;
             }
           }
@@ -66,27 +68,33 @@
         .header-social {
           .social-item {
             background-color: #5f77a3;
+            &.item-language{
+              border: none;
+            }
 
-              .title {
-                .fas {
-                  color: #fff !important;
-                }
+            .title {
+              .fas {
+                color: #fff !important;
               }
+            }
           }
         }
       }
     }
-    .header-nav{
+
+    .header-nav {
       background-color: #fff;
-      box-shadow: 0 5px 35px rgba(29,64,125,0.2);
-      .nav-content{
-        .nav{
-          .menu{
-            .menu-list{
-              .menu-list__item{
-                .menu-list__link{
+      box-shadow: 0 5px 35px rgba(29, 64, 125, 0.2);
+
+      .nav-content {
+        .nav {
+          .menu {
+            .menu-list {
+              .menu-list__item {
+                .menu-list__link {
                   color: #395488;
-                  &.active{
+
+                  &.active {
                     color: #fff;
                   }
                 }
@@ -97,6 +105,7 @@
       }
     }
   }
+
   &.scrolled {
     .header-top {
       margin-bottom: 90px;
@@ -155,6 +164,7 @@
 
           &.item-language {
             position: relative;
+            border: 1px solid #cdd3e9;
 
             .title {
               margin: 0;
@@ -254,6 +264,11 @@
           padding-left: 15px;
           position: relative;
           top: -3px;
+          &::placeholder{
+            color: #506592;
+            font-family: Avo_Italic;
+            font-size: 10px;
+          }
         }
       }
 
@@ -555,7 +570,7 @@
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
-  #header {
+  .header-index {
     .header-top {
       .top-content {
         .header-conect {
@@ -591,7 +606,23 @@
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
-  #header {
+  .header-index {
+    &.header-page {
+      &.scrolled {
+        .header-nav {
+          .nav-content {
+            .logo {
+              img {
+                width: 144px;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+
     &.scrolled {
       .header-nav {
         .nav-content {
@@ -642,8 +673,39 @@
 }
 
 @media only screen and (max-width: 767px) {
-  #header {
+  .header-index {
     position: relative;
+
+    &.header-page {
+      &.scrolled {
+        .header-nav {
+          padding-top: 10px;
+
+          .nav-content {
+            .nav {
+              .show__menu {
+                transform: translateY(-50%);
+              }
+            }
+          }
+        }
+      }
+      .header-nav{
+        .nav-content{
+          .nav{
+            .menu{
+              .menu-list{
+                .menu-list__item{
+                  .menu-list__link{
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 
     &.scrolled {
       .header-nav {
@@ -789,7 +851,7 @@
 }
 
 @media (max-width: 479px) {
-  #header {
+  .header-index {
     .header-top {
       .top-content {
         .search {

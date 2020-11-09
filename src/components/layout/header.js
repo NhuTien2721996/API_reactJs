@@ -21,23 +21,23 @@ const Header = ({location}) => {
                 <div className="bs-container">
                     <div className="top-content">
                         <div className="header-top__left" data-aos="fade-right">
-                            <img src="images/item_phone.png" alt=""/>
+                            <img src="/images/item_phone.png" alt=""/>
                             <span className="phone-number">hotline:1900 2863</span>
                         </div>
                         <div className="header-social" data-aos="fade-left">
                             <div className="search">
                                 <input type="text" className="form-search" placeholder="Search..."/>
                                 <button className="search__btn" type="button">
-                                    <img src="images/item_search.png" alt=""/>
+                                    <img src="/images/item_search.png" alt=""/>
                                 </button>
                             </div>
                             <div className="search-respon" onClick={() => setToggleFormSearch(!toggleFormSearch)}>
                                 {toggleFormSearch ? <span className="close__form">x</span> :
-                                    <img src="images/item_search.png" alt=""/>}
+                                    <img src="/images/item_search.png" alt=""/>}
                             </div>
                             <div className="social-item item-language">
                                 <p className="title">
-                                    <img src="images/layer-3.png" alt="" className="icon"/>
+                                    <img src="/images/layer-3.png" alt="" className="icon"/>
                                     <i className="fas fa-chevron-down"></i>
                                 </p>
                                 <ul className="social-list">
@@ -59,7 +59,7 @@ const Header = ({location}) => {
                     <div className={`form-search__respon ${toggleFormSearch ? "active" : ""}`}>
                         <input type="text" className="form-search" placeholder="Search..."/>
                         <button className="search__btn" type="button">
-                            <img src="images/item_search.png" alt=""/>
+                            <img src="/images/item_search.png" alt=""/>
                         </button>
                     </div>
                 </div>

@@ -32,7 +32,6 @@ export const getAllNews = news => {
 export const onToggleModal = () => {
     return {
         type: constants.TOGGLE_MODAL,
-
     }
 };
 

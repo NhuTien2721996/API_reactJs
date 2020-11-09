@@ -1,23 +1,22 @@
-import React,{useEffect,useState} from "react";
+import React, {useEffect, useState} from "react";
 import Paginator from "../../layout/paginator";
-import {useSelector,useDispatch} from "react-redux";
+import {useSelector, useDispatch} from "react-redux";
 import {getAllNewsRequest} from "../../../states/duck/pages/homePage/action";
 import {Link} from "react-router-dom";
 
 
-
 const MainContent = () => {
-    const listNews=useSelector(state=>state.homePage.news);
-    const dispatch=useDispatch();
-    useEffect(()=>{
+    const listNews = useSelector(state => state.homePage.news);
+    const dispatch = useDispatch();
+    useEffect(() => {
         dispatch(getAllNewsRequest())
-    },[]);
+    }, []);
     return (
         <div className="main-content">
             <div className="bs-row row-md-15">
-                {listNews.map((item,index)=>{
-                    return  <div className="bs-col lg-50-15" key={index}>
-                        <div className="item">
+                {listNews.map((item, index) => {
+                    return <div className="bs-col tn-100-5 xs-100-5 sm-50-10 md-50-15 lg-50-15" key={index}>
+                        <div className="item" data-aos="fade-up" data-aos-delay="100">
                             <div className="item-image">
                                 <Link to={`/news/${item.id}`} className="link">
                                     <img src={`/images/${item.image}`} alt=""/>
@@ -29,12 +28,14 @@ const MainContent = () => {
                             </div>
                             <div className="item-text">
                                 <div className="item-text__time">
-                                    <span className="date"><i className="far fa-clock">{item.date}</i></span>
+                                    <span className="date"><i className="far fa-clock"></i>{item.date}</span>
                                     <span className="view"><i className="far fa-eye"></i>{item.view}</span>
                                 </div>
-                                <h4 className="title">
-                                    {item.title}
-                                </h4>
+                                <Link to={`news/${item.id}`}>
+                                    <h4 className="title">
+                                        {item.title}
+                                    </h4>
+                                </Link>
                                 <p className="desc">
                                     {item.desc}
                                 </p>
@@ -45,7 +46,7 @@ const MainContent = () => {
                 })}
             </div>
 
-        <Paginator/>
+            <Paginator/>
         </div>
     );
 };
