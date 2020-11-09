@@ -1,0 +1,89 @@
+.footer {
+ background-color: #17305c;
+  padding-top: 78px;
+  padding-bottom: 52px;
+  margin-top: -45px;
+  &.footer-page{
+    background-image: url("/images/bg-footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 0;
+    margin-top: 0;
+    .item{
+      .head{
+        .logo-index{
+          display: none;
+        }
+        .logo-page{
+          display: block;
+        }
+      }
+    }
+    .copyright{
+      background: #1d407d;
+      text-align: center;
+      padding: 20px 0;
+    }
+  }
+  .item{
+    max-width: 410px;
+    margin-right: auto;
+    margin-left: 0;
+    .head{
+      max-width: 316px;
+      margin-right: auto;
+      margin-left: 0;
+      .logo-index{
+        width: 100%;
+      }
+      .logo-page{
+        display: none;
+        width: 100%;
+      }
+    }
+    .desc{
+      font-family: Avo_Italic;
+      color: #fff;
+      font-size: 13px;
+      line-height: 21px;
+      margin-top: 19px;
+    }
+  }
+  .item-service{
+    margin-top: 28px;
+    .title{
+      font-family: opensan_bold;
+      color: #fff;
+      text-decoration: underline;
+      font-size: 25px;
+    }
+    .list{
+      margin-top:36px;
+      .item-list{
+        margin-bottom: 19px;
+        .item-list__link{
+          color: #fff;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .copyright{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 13px;
+  }
+}
+@media (max-width: 991px) {
+  #footer{
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #footer{
+    .copyright{
+      text-align: center;
+    }
+  }
+}
