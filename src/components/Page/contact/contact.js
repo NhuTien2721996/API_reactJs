@@ -13,7 +13,7 @@ const Contact = () => {
                             <Link to="/" className="link">
                                 Trang chủ
                             </Link>
-                            <Link to="/news" className="link">
+                            <Link to="/contact" className="link">
                                 / Liên hệ
                             </Link>
                         </div>
@@ -31,7 +31,8 @@ const Contact = () => {
                                         <div className="item-contact clearfix" data-aos="fade-left">
                                             <div className="item-icon">
                                                 <img src="/images/layer-25.png" alt="" className="icon"/>
-                                                <img src="/images/layer-25-hover.png" alt="" className="icon icon-hover"/>
+                                                <img src="/images/layer-25-hover.png" alt=""
+                                                     className="icon icon-hover"/>
                                             </div>
                                             <div className="item-text">
                                                 <p className="address">
@@ -42,10 +43,12 @@ const Contact = () => {
                                         </div>
                                     </div>
                                     <div className="bs-col tn-100-5 xs-100-5 sm-50-10 md-33-15 lg-33-15">
-                                        <div className="item-contact clearfix" data-aos="fade-left" data-aos-delay="200">
+                                        <div className="item-contact clearfix" data-aos="fade-left"
+                                             data-aos-delay="200">
                                             <div className="item-icon">
                                                 <img src="/images/layer26.png" alt="" className="icon"/>
-                                                <img src="/images/layer26-hover.png" alt="" className="icon icon-hover"/>
+                                                <img src="/images/layer26-hover.png" alt=""
+                                                     className="icon icon-hover"/>
                                             </div>
                                             <div className="item-text">
                                                 <p className="phone">
@@ -55,10 +58,12 @@ const Contact = () => {
                                         </div>
                                     </div>
                                     <div className="bs-col tn-100-5 xs-100-5 sm-50-10 md-33-15 lg-33-15">
-                                        <div className="item-contact clearfix" data-aos="fade-left" data-aos-delay="400">
+                                        <div className="item-contact clearfix" data-aos="fade-left"
+                                             data-aos-delay="400">
                                             <div className="item-icon">
                                                 <img src="/images/layer27.png" alt="" className="icon"/>
-                                                <img src="/images/layer27-hover.png" alt="" className="icon icon-hover"/>
+                                                <img src="/images/layer27-hover.png" alt=""
+                                                     className="icon icon-hover"/>
                                             </div>
                                             <div className="item-text">
                                                 <p className="mail">
@@ -89,7 +94,8 @@ const Contact = () => {
                                         <form className="input-content">
                                             <div className="bs-row row-tn-5 row-xs-5 row-sm-10 row-md-15">
                                                 <div className="bs-col tn-100-5 xs-50-5 sm-100-10 md-50-15 lg-50-15">
-                                                    <input type="text" className="input-contact" placeholder="Họ và tên"/>
+                                                    <input type="text" className="input-contact"
+                                                           placeholder="Họ và tên"/>
                                                 </div>
                                                 <div className="bs-col tn-100-5 xs-50-5 sm-100-10 md-50-15 lg-50-15">
                                                     <input type="text" className="input-contact" placeholder="Tổ chức"/>
@@ -98,7 +104,8 @@ const Contact = () => {
                                                     <input type="text" className="input-contact" placeholder="Email"/>
                                                 </div>
                                                 <div className="bs-col tn-100-5 xs-50-5 sm-100-10 md-50-15 lg-50-15">
-                                                    <input type="text" className="input-contact" placeholder="Số điện thoại"/>
+                                                    <input type="text" className="input-contact"
+                                                           placeholder="Số điện thoại"/>
                                                 </div>
                                                 <div className="bs-col tn-100-5 xs-100-5 sm-100-10 md-100-15 lg-100-15">
                                             <textarea className="input-contact input-textarea" rows="3"
@@ -117,6 +124,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="google-map-code">
+                        {/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4705722549797!2d105.76771451420224!3d21.01384918600644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453578a0a260b%3A0xeac7a8dadbb686b8!2zMjEgTMOqIFF1YW5nIMSQ4bqhbywgTeG7hSBUcsOsLCBU4burIExpw6ptLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1604930533852!5m2!1svi!2s"
                             width="100%" height="100%" frameBorder="0" style={{border: 0}} allowFullScreen=""
