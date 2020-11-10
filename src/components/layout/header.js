@@ -5,19 +5,11 @@ import routes from "../../states/routes";
 import $ from "jquery";
 
 const Header = ({location}) => {
-    $(document).ready(function () {
-        $('.show__menu').click(function () {
-            $('.header-nav').addClass('active');
-        });
-        $('.close__menu').click(function () {
-            $('.header-nav').removeClass('active')
-        })
-    });
     const [toggleMenu, setToggleMenu] = useState(false);
     const [toggleFormSearch, setToggleFormSearch] = useState(false);
     return (
         <div className={location.pathname==="/" ? "header-index":"header-index header-page"}>
-            <div className="header-top">
+            <div className={`header-top ${toggleMenu ? "active": ""}`}>
                 <div className="bs-container">
                     <div className="top-content">
                         <div className="header-top__left" data-aos="fade-right">
@@ -64,7 +56,7 @@ const Header = ({location}) => {
                     </div>
                 </div>
             </div>
-            <div className="header-nav" data-aos="fade-up" data-aos-delay="500">
+            <div className="header-nav" data-aos="fade-up" >
                 <div className="bs-container">
                     <div className="nav-content clearfix">
                         <div className="logo" data-aos="fade-down">
@@ -73,7 +65,7 @@ const Header = ({location}) => {
                             </Link>
                         </div>
                         <div className="nav">
-              <span className="show__menu" onClick={() => setToggleMenu(true)}>
+              <span className="show__menu"  onClick={() => setToggleMenu(!toggleMenu)}>
                 <i className="fas fa-bars"/>
               </span>
                             <div className={`menu ${toggleMenu ? "active" : ""}`}>

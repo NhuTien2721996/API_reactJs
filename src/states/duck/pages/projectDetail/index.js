@@ -5,8 +5,7 @@ const initialState =[];
 const projectDetail = (state = initialState, action) => {
     switch (action.type) {
         case types.GET_PROJECT_PAGE_DETAIL:
-            state = action.projectDetail;
-            return state;
+            return action.projectDetail;
         default:
             return state
     }

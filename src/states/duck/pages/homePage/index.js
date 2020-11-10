@@ -1,22 +1,19 @@
 import * as types from "./constants";
 
 const initialState = {
-    projects:[],
-    news:[],
-    status:false
+    projects: [],
+    news: [],
+    status: false
 };
 
 const homePage = (state = initialState, action) => {
     switch (action.type) {
         case types.GET_ALL_HOMEPAGE_PROJECTS:
-            state.projects=action.projects;
-            return {...state};
+            return {...state, projects: action.projects};
         case types.GET_ALL_HOMEPAGE_NEWS:
-            state.news=action.news;
-            return {...state};
+            return {...state, news: action.news};
         case types.TOGGLE_MODAL:
-            state.status=!state.status;
-            return {...state};
+            return {...state, status: !state.status};
         default:
             return state
     }

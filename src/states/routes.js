@@ -67,7 +67,7 @@ const routes = [
         path: '/contact',
         exact: false,
         name: 'Liên hệ',
-        main: () => <HomePage />,
+        main: () => <Contact/>,
     }
 ];
 export default routes;
