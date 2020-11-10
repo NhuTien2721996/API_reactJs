@@ -25,7 +25,8 @@
   .children-content {
     padding-top: 60px;
     padding-bottom: 60px;
-    &.children-content__contact{
+
+    &.children-content__contact {
       padding-bottom: 0;
     }
 
@@ -44,7 +45,8 @@
           border-radius: 10px;
           border: 1px solid #8397b9;
           overflow: hidden;
-          &:hover{
+
+          &:hover {
             box-shadow: 0 10px 45px rgba(48, 78, 142, 0.3);
           }
 
@@ -103,13 +105,16 @@
             padding-left: 5px;
             margin-top: 21px;
             margin-bottom: 14px;
-            .far{
+
+            .far {
               margin-right: 8px;
             }
-            .date{
+
+            .date {
               position: relative;
               font-size: 13px;
-              &::after{
+
+              &::after {
                 content: "";
                 height: 14px;
                 width: 2px;
@@ -144,8 +149,7 @@
       }
 
       .paginator {
-        display: flex;
-        justify-content: center;
+        text-align: center;
 
         .button {
           width: 82px;
@@ -153,6 +157,7 @@
           background-color: #ced0e5;
           border-radius: 20px;
           position: relative;
+          display: inline-block;
 
           .button-control {
             color: #6e6b88;
@@ -173,6 +178,7 @@
           height: 40px;
           position: relative;
           margin: 0 5px;
+          display: inline-block;
 
           .page {
             color: #5a5573;
@@ -189,20 +195,24 @@
       &.main-content__detail {
         border: 1px solid #cdd3e9;
         padding: 32px;
+
         .title {
           color: #2366e1;
           font-family: opensan_semiBold;
           margin-bottom: 12px;
         }
-        .time{
+
+        .time {
           color: #8397b9;
           margin-left: 32px;
           margin-bottom: 25px;
-          .date{
+
+          .date {
             font-size: 14px;
             margin-right: 45px;
             position: relative;
-            &::after{
+
+            &::after {
               content: "";
               width: 2px;
               height: 14px;
@@ -212,24 +222,30 @@
               right: -18px;
               transform: translateY(-50%);
             }
-            .far{
+
+            .far {
               margin-right: 8px;
             }
           }
-          .view{
+
+          .view {
             font-size: 13px;
-            .far{
+
+            .far {
               margin-right: 8px;
             }
           }
         }
-        .image{
+
+        .image {
           margin-bottom: 32px;
-          img{
+
+          img {
             width: 100%;
           }
         }
-        .desc{
+
+        .desc {
           color: #3d485b;
           font-size: 14px;
           line-height: 25px;
@@ -254,7 +270,8 @@
           padding-right: 50px;
           padding-left: 22px;
           color: #5f78a4;
-          &::placeholder{
+
+          &::placeholder {
             color: #8093b6;
             font-family: opensan_italic;
             font-size: 14px;
@@ -308,7 +325,6 @@
           padding-top: 18px;
 
           .item {
-            display: flex;
             margin-bottom: 20px;
             cursor: pointer;
             position: relative;
@@ -316,14 +332,16 @@
             &:last-child {
               margin-bottom: 0;
             }
-            .link{
-              display: flex;
+
+            .link {
               .item-image {
                 height: 74px;
                 width: 74px;
                 position: relative;
                 border-radius: 5px;
                 overflow: hidden;
+                float: left;
+
                 img {
                   width: 100%;
                   height: 100%;
@@ -334,10 +352,12 @@
                   object-fit: cover;
                 }
               }
+
               .item-text {
-                max-width: 130px;
+                padding-left: 74px;
                 margin-left: 15px;
-                margin-top: 3px;
+                padding-top: 7px;
+
                 .title {
                   color: #6b7380;
                   font-size: 12px;
@@ -346,7 +366,8 @@
                 .date {
                   color: #93a4c2;
                   font-size: 13px;
-                  .far{
+
+                  .far {
                     margin-right: 8px;
                   }
                 }
@@ -361,23 +382,27 @@
 
 
 @media (max-width: 991px) {
-  .page-children{
+  .page-children {
     padding-top: 108px;
-    .children-header{
+
+    .children-header {
       padding: 30px 0;
     }
-    .children-content{
-      .sidebar{
-        .form-search{
+
+    .children-content {
+      .sidebar {
+        .form-search {
           display: none;
         }
-        .hot-news{
-          .hot-news__content{
-            display: flex;
-            overflow: auto;
-            .item{
-              margin-right: 20px;
-              margin-bottom: 0;
+
+        .hot-news {
+          .hot-news__content {
+            text-align: center;
+
+            .item {
+              display: inline-block;
+
+              margin: 0 30px 20px 30px;
             }
           }
         }
@@ -385,22 +410,30 @@
     }
   }
 }
+
 @media (max-width: 767px) {
-  .page-children{
+  .page-children {
     padding-top: 0;
-    .children-content{
+
+    .children-content {
       padding: 30px 0;
-      .main-content{
-        &.main-content__detail{
+
+      .main-content {
+        &.main-content__detail {
           padding: 15px;
         }
       }
-      .sidebar{
-        .hot-news{
-          padding-bottom: 0;
-          .hot-news__content{
-            .item{
-              margin-bottom: 15px;
+
+      .sidebar {
+        .hot-news {
+          .hot-news__content {
+            .item {
+              margin-bottom: 20px;
+              .link{
+                .item-text{
+                  text-align: left;
+                }
+              }
             }
           }
         }
@@ -408,6 +441,28 @@
     }
   }
 }
+
+@media (max-width: 479px) {
+  .page-children {
+    .children-content {
+      .sidebar {
+        .hot-news {
+          .hot-news__content {
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            .item {
+              margin-left: 0;
+              margin-right: 0;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 #footer {
   margin-top: 0;
 }

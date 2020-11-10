@@ -22,7 +22,7 @@ const SideBar = () => {
                 </div>
                 <div className="hot-news__content">
                     {news.map((item,index)=>{
-                        return <div  className="item" key={index} data-aos="fade-left" data-aos-delay="100">
+                        return <div  className="item clearfix" key={index} data-aos="fade-left" data-aos-delay="100">
                             <Link to={`/news/${item.id}`} className="link">
                                 <div className="item-image">
                                     <img src={`/images/${item.image}`} alt=""/>

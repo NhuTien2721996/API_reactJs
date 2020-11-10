@@ -411,36 +411,68 @@ h2.title {
             overflow: hidden;
             transition: 0.8s;
             margin-top: 7px;
+            &.active{
+              transform: translateX(-40px);
+              transition: 0.8s;
+              &::before{
+                transform: translate(-200%, -50%);
+                transition: 0.8s;
+              }
+            }
 
             &.content-1 {
-              animation: active_content_1 16s linear infinite;
+              &:active {
+                transform: translateX(-40px);
+                transition: 0.8s;
 
-              &::before {
-                animation: active_bg_1 16s linear infinite;
+                &::before {
+                  transform: translate(-200%, -50%);
+                  transition: 0.8s;
+
+                }
               }
+
+
             }
 
             &.content-2 {
-              animation: active_content_2 16s linear infinite;
+              &:active {
+                transform: translateX(-40px);
+                transition: 0.8s;
 
-              &::before {
-                animation: active_bg_2 16s linear infinite;
+                &::before {
+                  transform: translate(-200%, -50%);
+                  transition: 0.8s;
+
+                }
               }
+
             }
 
             &.content-3 {
-              animation: active_content_3 16s linear infinite;
+              &:active {
+                transform: translateX(-40px);
+                transition: 0.8s;
 
-              &::before {
-                animation: active_bg_3 16s linear infinite;
+                &::before {
+                  transform: translate(-200%, -50%);
+                  transition: 0.8s;
+
+                }
               }
+
             }
 
             &.content-4 {
-              animation: active_content_4 16s linear infinite;
+              &:active {
+                transform: translateX(-40px);
+                transition: 0.8s;
 
-              &::before {
-                animation: active_bg_4 16s linear infinite;
+                &::before {
+                  transform: translate(-200%, -50%);
+                  transition: 0.8s;
+
+                }
               }
             }
 
@@ -455,7 +487,6 @@ h2.title {
 
               }
             }
-
             &::before {
               content: "";
               width: calc(100% - 4px);
@@ -510,8 +541,8 @@ h2.title {
             top: 0;
             left: 0;
             border-radius: 100%;
-            z-index: 2;
-            animation: rotate 16s linear infinite;
+            z-index: 5;
+            animation: rotate 28s linear infinite;
 
             img {
               width: 100%;
@@ -522,7 +553,8 @@ h2.title {
               bottom: 5%;
               left: 6%;
               width: 19%;
-              animation: rotate_item_1 16s linear infinite;
+              cursor: pointer;
+              animation: rotate_item_1 28s linear infinite;
             }
 
             .layer-2 {
@@ -530,7 +562,8 @@ h2.title {
               width: 19%;
               bottom: 7%;
               right: 4%;
-              animation: rotate_item_4 16s linear infinite;
+              animation: rotate_item_4 28s linear infinite;
+              cursor: pointer;
 
             }
 
@@ -539,7 +572,8 @@ h2.title {
               top: -13%;
               right: 6.5%;
               width: 19%;
-              animation: rotate_item_3 16s linear infinite;
+              animation: rotate_item_3 28s linear infinite;
+              cursor: pointer;
 
             }
 
@@ -548,7 +582,8 @@ h2.title {
               top: -13%;
               left: 8%;
               width: 19%;
-              animation: rotate_item_2 16s linear infinite;
+              animation: rotate_item_2 28s linear infinite;
+              cursor: pointer;
 
             }
 
@@ -579,7 +614,7 @@ h2.title {
             top: 26%;
             left: 26.8%;
             width: 41%;
-            z-index: 1;
+            z-index: 6;
 
             img {
               width: 100%;
@@ -732,7 +767,7 @@ h2.title {
               bottom: 42%;
               right: 38%;
               width: 12%;
-              z-index: 1;
+              z-index: 3;
             }
 
             .layer-9 {
@@ -740,7 +775,7 @@ h2.title {
               bottom: 16%;
               left: 56%;
               width: 14%;
-              z-index: 1;
+              z-index: 4;
               animation: layer_tower3 5s linear infinite;
 
 
@@ -1386,7 +1421,6 @@ h2.title {
             top: 15%;
             left: 25%;
             width: 7%;
-            animation: checked 4s linear infinite;
           }
 
           .star-1 {
@@ -1394,7 +1428,6 @@ h2.title {
             top: 11.5%;
             left: 33%;
             width: 7%;
-            animation: checked 4s linear infinite;
 
           }
 
@@ -1403,7 +1436,7 @@ h2.title {
             top: 7.7%;
             left: 41%;
             width: 7%;
-            animation: checked 4s linear infinite;
+            animation: checked-1 4s linear infinite;
 
           }
 
@@ -2260,25 +2293,25 @@ h2.title {
   0% {
     transform: rotate(0);
   }
-  12.5% {
+  6.5% {
     transform: rotate(90deg);
   }
   25% {
     transform: rotate(90deg);
   }
-  37.5% {
+  31.5% {
     transform: rotate(180deg);
   }
   50% {
     transform: rotate(180deg);
   }
-  62.5% {
+  56.5% {
     transform: rotate(270deg);
   }
   75% {
     transform: rotate(270deg);
   }
-  88% {
+  82% {
     transform: rotate(360deg);
   }
   100% {
@@ -2290,25 +2323,25 @@ h2.title {
   0% {
     transform: rotate(0);
   }
-  12.5% {
+  6.5% {
     transform: rotate(-90deg) translate(-77%, 38%);
   }
   25% {
     transform: rotate(-90deg) translate(-77%, 38%);
   }
-  37.5% {
+  31.5% {
     transform: rotate(-180deg) translate(-3%, -39%) scale(1);
   }
   50% {
     transform: rotate(-180deg) translate(-3%, -39%);
   }
-  62.5% {
+  56.5% {
     transform: rotate(-270deg) translate(98%, -95%);
   }
   75% {
     transform: rotate(-270deg) translate(98%, -95%);
   }
-  87.5% {
+  82% {
     transform: rotate(-360deg) translate(0%, 0%)
   }
   100% {
@@ -2321,25 +2354,25 @@ h2.title {
   0% {
     transform: rotate(0);
   }
-  12.5% {
+  6.5% {
     transform: rotate(-90deg) translate(28%, 25%) scale(1);
   }
   25% {
     transform: rotate(-90deg) translate(28%, 25%);
   }
-  37.5% {
+  31.5% {
     transform: rotate(-180deg) translate(19%, -61%);
   }
   50% {
     transform: rotate(-180deg) translate(19%, -61%);
   }
-  62.5% {
+  56.5% {
     transform: rotate(-270deg) translate(-36%, -74%);
   }
   75% {
     transform: rotate(-270deg) translate(-36%, -74%);
   }
-  87.5% {
+  82% {
     transform: rotate(-360deg) translate(0%, 0%);
   }
   100% {
@@ -2351,25 +2384,25 @@ h2.title {
   0% {
     transform: rotate(0);
   }
-  12.5% {
+  6.5% {
     transform: rotate(-90deg) translate(46%, -84%);
   }
   25% {
     transform: rotate(-90deg) translate(46%, -84%);
   }
-  37.5% {
+  31.5% {
     transform: rotate(-180deg) translate(-5%, -50%);
   }
   50% {
     transform: rotate(-180deg) translate(-5%, -50%);
   }
-  62.5% {
+  56.5% {
     transform: rotate(-270deg) translate(-26%, 23%);
   }
   75% {
     transform: rotate(-270deg) translate(-26%, 23%);
   }
-  87.5% {
+  82% {
     transform: rotate(-360deg) translate(0%, 0%) scale(1);
   }
   100% {
@@ -2382,25 +2415,25 @@ h2.title {
   0% {
     transform: rotate(0);
   }
-  12.5% {
+  6.5% {
     transform: rotate(-90deg) translate(-98%, -96%);
   }
   25% {
     transform: rotate(-90deg) translate(-98%, -96%);
   }
-  37.5% {
+  31.5% {
     transform: rotate(-180deg) translate(22%, -59%);
   }
   50% {
     transform: rotate(-180deg) translate(22%, -59%);
   }
-  62.5% {
+  56.5% {
     transform: rotate(-270deg) translate(93%, 52%) scale(1);
   }
   75% {
     transform: rotate(-270deg) translate(93%, 52%);
   }
-  87.5% {
+  82% {
     transform: rotate(-360deg) translate(0%, 0%)
   }
   100% {
@@ -2888,54 +2921,32 @@ h2.title {
     transform: translateY(0) scale(1);
   }
 }
-
-@keyframes transform_rec_2 {
+@keyframes checked-1 {
   0% {
-    top: 46%;
-    left: 14%;
-    width: 21.7%;
-    z-index: 0;
     opacity: 0;
+    transform: translateY(-20px) scale(0);
   }
-  16% {
-    top: 22%;
-    left: 69%;
-    width: 21.7%;
-    z-index: 0;
+  47%{
+    opacity: 0;
+    transform: translateY(-20px) scale(0);
+  }
+  48%{
     opacity: 1;
+    transform: translateY(0) scale(1);
   }
-  32% {
-    top: 22%;
-    left: 69%;
-    width: 21.7%;
-    z-index: 1;
-
-  }
-  48% {
-    top: 28%;
-    left: 46%;
-    width: 27.8%;
-    z-index: 1;
-  }
-  64% {
-    top: 28%;
-    left: 46%;
-    width: 27.8%;
-    z-index: 1;
-  }
+  //79% {
+  //  opacity: 0;
+  //  transform: translateY(-20px) scale(0);
+  //
+  //}
   80% {
-    top: 46%;
-    left: 14%;
-    width: 21.7%;
-    z-index: 1;
+    opacity: 1;
+    transform: translateY(0) scale(1);
 
   }
   100% {
-    top: 46%;
-    left: 14%;
-    width: 21.7%;
-    z-index: 1;
-
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -2992,6 +3003,57 @@ h2.title {
     z-index: 1;
   }
 }
+
+@keyframes transform_rec_2 {
+  0% {
+    top: 46%;
+    left: 14%;
+    width: 21.7%;
+    z-index: 0;
+    opacity: 0;
+  }
+  16% {
+    top: 22%;
+    left: 69%;
+    width: 21.7%;
+    z-index: 0;
+    opacity: 1;
+  }
+  32% {
+    top: 22%;
+    left: 69%;
+    width: 21.7%;
+    z-index: 1;
+
+  }
+  48% {
+    top: 28%;
+    left: 46%;
+    width: 27.8%;
+    z-index: 1;
+  }
+  64% {
+    top: 28%;
+    left: 46%;
+    width: 27.8%;
+    z-index: 1;
+  }
+  80% {
+    top: 46%;
+    left: 14%;
+    width: 21.7%;
+    z-index: 1;
+
+  }
+  100% {
+    top: 46%;
+    left: 14%;
+    width: 21.7%;
+    z-index: 1;
+
+  }
+}
+
 
 @keyframes show_hidden_1 {
   0% {
